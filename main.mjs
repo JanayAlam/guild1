@@ -6,4 +6,13 @@ function printPyramid(rows) {
   }
 }
 
+function printUpsideDownPyramid(rows) {
+  for (let i = rows; i >= 1; i--) {
+    let str = " ".repeat(rows - i);
+    let str2 = "*".repeat(i * 2 - 1);
+    console.log(str + str2 + str);
+  }
+}
+
 printPyramid(5);
+printUpsideDownPyramid(5);
