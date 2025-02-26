@@ -1,1 +1,18 @@
-console.log("This is initial work");
+function printPyramid(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let str = " ".repeat(rows - i);
+    let str2 = "*".repeat(i * 2 - 1);
+    console.log(str + str2 + str);
+  }
+}
+
+function printUpsideDownPyramid(rows) {
+  for (let i = rows; i >= 1; i--) {
+    let str = " ".repeat(rows - i);
+    let str2 = "*".repeat(i * 2 - 1);
+    console.log(str + str2 + str);
+  }
+}
+
+printPyramid(5);
+printUpsideDownPyramid(5);
